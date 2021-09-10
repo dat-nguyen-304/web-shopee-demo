@@ -1,0 +1,117 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #f85f4d;
+    
+    --header-sort-bar: 0px;
+    --header-sort-height: 40px;
+    --header-height: 120px;
+    --nav-height: 25.6px;
+    --header-search-height: calc(var(--header-height) - var(--nav-height));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.grid__column-2-12 {
+    width: 16.6667%;
+    padding: 0 5px;
+}
+
+.grid__column-10-12 {
+    width: 83.3333%;
+    padding: 0 5px;
+}
+
+.grid__column-2-10 {
+    width: 20%;
+    padding: 0 5px;
+}
+
+.mr12 {
+    margin-right: 12px !important;
+}
+
+.mr16 {
+    margin-right: 16px !important;
+}
+
+.pt32 {
+    padding-top: 32px !important;
+}
+
+.pb32 {
+    padding-bottom: 32px !important;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    min-width: 124px;
+    padding: 10px;
+    font-size: 1.4rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.btn--primary,
+.btn--primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn--size-s {
+    padding: 6px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.1;
+    }
+}
